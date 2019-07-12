@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Shocase]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://www.shocase.com"/>
+  <test name="MainPage">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.shocase.com"/>
+    <classes>
+      <class name="MainPage.GUI"/>
+      <class name="MainPage.SingUp"/>
+    </classes>
+  </test> <!-- MainPage -->
+  <test name="SignUpPage">
+    <classes>
+      <class name="SignUpPage.GUI"/>
+    </classes>
+  </test> <!-- SignUpPage -->
+  <test name="MainPage(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.shocase.com"/>
+    <classes>
+      <class name="MainPage.SingUp">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- MainPage.SingUp -->
+      <class name="MainPage.GUI">
+        <methods>
+          <include name="quiteBrowser"/>
+          <include name="URL"/>
+        </methods>
+      </class> <!-- MainPage.GUI -->
+    </classes>
+  </test> <!-- MainPage(failed) -->
+  <test name="SignUpPage(failed)">
+    <classes>
+      <class name="SignUpPage.GUI">
+        <methods>
+          <include name="start"/>
+        </methods>
+      </class> <!-- SignUpPage.GUI -->
+      <class name="MainPage.GUI">
+        <methods>
+          <include name="quiteBrowser"/>
+          <include name="URL"/>
+        </methods>
+      </class> <!-- MainPage.GUI -->
+    </classes>
+  </test> <!-- SignUpPage(failed) -->
+</suite> <!-- Failed suite [Shocase] -->

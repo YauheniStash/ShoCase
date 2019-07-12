@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="title" value="News Feed - Shocase"/>
+  <parameter name="URL" value="https://www.shocase.com/go/signup"/>
+  <test name="Test">
+    <parameter name="title" value="News Feed - Shocase"/>
+    <parameter name="URL" value="https://www.shocase.com/go/signup"/>
+    <classes>
+      <class name="MainPage.Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Failed suite [Suite] -->
