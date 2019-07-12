@@ -13,7 +13,7 @@ public class Arrays {
 	a[3][0]="di";
 	a[3][1]="edureca";
 	a[3][0]="di";
-	a[3][1]="edureca2";
+	a[3][1]="edureca3";
 	/*for (int row=0;row<a.length;row++) {
 		for(int col=0;col<a[0].length;col++)
 			System.out.println(a[row][col]);
